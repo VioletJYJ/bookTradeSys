@@ -1,5 +1,7 @@
 package cn.itcast.bookstore.user.domain;
-
+/**
+*用户类
+*/
 public class User {
 	public int hashCode() {
 		final int prime = 31;
@@ -36,9 +38,9 @@ public class User {
 			return false;
 		return true;
 	}
-	private String uid;
-	private String username;
-	private String password;
+	private String uid;//用户id
+	private String username;//用户名
+	private String password;//用户密码
 	public String getUid() {
 		return uid;
 	}
