@@ -11,7 +11,7 @@ import cn.itcast.bookstore.user.domain.User;
 public class Order {
 	private String oid;//订单编号
 	private Date ordertime;//下单时间
-	private Double price = 0.0;//订单价格
+	private Double price = 0.0;//订单总计价格
 	private int state;//订单状态
 	private User user;//用户
 	private String address;//地址
