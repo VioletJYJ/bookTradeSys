@@ -1,12 +1,14 @@
 package cn.itcast.bookstore.order.domain;
-
+/**
+*订单条目
+*/
 import cn.itcast.bookstore.book.domain.Book;
 
 public class OrderItem {
-	private String iid;
-	private Integer count = 0;
-	private Double subtotal = 0.0;
-	private Book book;
+	private String iid;//订单条目编号
+	private Integer count = 0;//数量
+	private Double subtotal = 0.0;//价格
+	private Book book;//图书
 
 	public String toString() {
 		return "OrderItem [iid=" + iid + ", count=" + count + ", price="
