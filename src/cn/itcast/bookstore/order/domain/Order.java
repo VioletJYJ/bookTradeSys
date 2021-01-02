@@ -1,5 +1,7 @@
 package cn.itcast.bookstore.order.domain;
-
+/**
+*订单类
+*/
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -7,12 +9,12 @@ import java.util.Set;
 import cn.itcast.bookstore.user.domain.User;
 
 public class Order {
-	private String oid;
-	private Date ordertime;
-	private Double price = 0.0;
-	private int state;
-	private User user;
-	private String address;
+	private String oid;//订单编号
+	private Date ordertime;//下单时间
+	private Double price = 0.0;//订单价格
+	private int state;//订单状态
+	private User user;//用户
+	private String address;//地址
 	
 	public String getAddress() {
 		return address;
