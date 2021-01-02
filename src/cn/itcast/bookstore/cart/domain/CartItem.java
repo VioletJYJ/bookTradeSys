@@ -1,11 +1,13 @@
 package cn.itcast.bookstore.cart.domain;
-
+/**
+*购物车条目
+*/
 import cn.itcast.bookstore.book.domain.Book;
 
 public class CartItem {
-	private Book book;
-	private Integer count = 0;
-	private Double price = 0.0;
+	private Book book;//图书
+	private Integer count = 0;//数量
+	private Double price = 0.0;//价格
 	
 	public CartItem() {
 		
