@@ -34,7 +34,7 @@
   </head>
   
   <body>
-<h1 style="text-align: center;">图 书 交 易 系 统</h1>
+<h1 style="text-align: center;">图书交易系统</h1>
 <div style="font-size: 10pt;">
 <c:choose>
 	<c:when test="${not empty user}">
