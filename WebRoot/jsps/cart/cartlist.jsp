@@ -60,7 +60,7 @@
 <c:choose>
 	<c:when test="${empty sessionScope.cart.all }">目前购物车中没有图书</c:when>
 	<c:otherwise>
-<table border="1" width="100%" cellspacing="0" background="grey">
+<table border="1" width="100%" cellspacing="0" background="gray">
 	<tr>
 		<td colspan="7" align="right" style="font-size: 15pt; font-weight: 900">
 			<a href="cart/CartServlet?method=clear">清空购物车</a>
