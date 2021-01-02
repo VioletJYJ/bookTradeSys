@@ -1,5 +1,7 @@
 package cn.itcast.bookstore.cart.domain;
-
+/**
+* 购物车类
+*/
 import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -7,8 +9,8 @@ import java.util.Map;
 import cn.itcast.bookstore.book.domain.Book;
 
 public class Cart {
-	private Map<String,CartItem> map = new LinkedHashMap<String,CartItem>();
-	private Double price = 0.0;
+	private Map<String,CartItem> map = new LinkedHashMap<String,CartItem>(); //图书
+	private Double price = 0.0;// 购物车总计价格
 	
 	public double getPrice() {
 		return price;
@@ -32,19 +34,23 @@ public class Cart {
 		}
 	}
 	
+	 // 删除图书
 	public void del(String bid) {
 		CartItem ci = map.remove(bid);
 		this.price -= ci.getPrice();
 	}
 	
+	// 返回购物车中所有图书信息
 	public Collection<CartItem> getAll() {
 		return map.values();
 	}
 	
+	// 查找图书信息
 	public CartItem findById(String bid) {
 		return map.get(bid);
 	}
 	
+	// 清空购物车
 	public void clear() {
 		map.clear();
 		this.price = 0.0;
