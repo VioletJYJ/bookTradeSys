@@ -1,13 +1,15 @@
 package cn.itcast.bookstore.book.domain;
-
+/**
+* 图书信息类
+*/
 import cn.itcast.bookstore.category.domain.Category;
 
 public class Book {
-	private String bid;
-	private String bname;
-	private Double price;
-	private String author;
-	private String image;
+	private String bid;//图书编号
+	private String bname;//书名
+	private Double price;//价格
+	private String author;//作者
+	private String image;//封面
 
 
 	public int hashCode() {
