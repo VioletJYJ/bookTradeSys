@@ -79,7 +79,7 @@
 <form method="post" action="order/OrderServlet" id="form" target="_parent">
 	<input type="hidden" name="method" value="submit" />
 	<input type="hidden" name="oid" value="${order.oid }"/>
-	收货地址：<input type="text" name="address" size="50" value="湖北省武汉市华中师范大学张三收"/><br/>
+	收货地址：<input type="text" name="address" size="50" value="湖北省武汉市华中师范大学南湖校区张三收"/><br/>
 
 	选择银行：<br/>
 	<input type="radio" name="pd_FrpId" value="ICBC-NET-B2C" checked="checked"/>工商银行
